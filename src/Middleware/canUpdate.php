@@ -54,7 +54,7 @@ class canUpdate
 
         // If the count of migrations and dbMigrations is equal,
         // then the update as already been updated.
-        if (count($migrations) == count($dbMigrations)) {
+        if (count($migrations)-1 == count($dbMigrations)) {
             return true;
         }
 
